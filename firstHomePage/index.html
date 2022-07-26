@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>화면구현 과제</title>
+<link type="text/css" rel="stylesheet" href="css1.css"></link>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/c895b3190c.js" crossorigin="anonymous"></script>	
+<script src="main.js" defer></script>
+</head>
+<body>
+<!-- 네비 메뉴 시작 -->
+	<nav class="navi">
+		<div class="navi__logo">
+			<i class="fab fa-amazon"></i>
+			<a href="index.html">Amazon</a>
+		</div>
+		<ul class="navi__menu act">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="">New</a></li>
+			<li><a href="">Best</a></li>
+			<li><a href="">Sale</a></li>
+			<li><a class="login" href="login.html">Login</a></li>		
+		</ul>
+		<ul class="navi__sns act">
+			<li><a href="https://www.instagram.com/?hl=ko" target="_blank"><i class="fab fa-instagram"></i></a></li>
+			<li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+		</ul>
+		<a href="#" class="navi__toggle"><i class="fas fa-bars"></i></a>
+	</nav>
+<!-- 네비메뉴 끝 -->
+<!-- 슬라이더 시작-->
+	<div class="container">
+		<ul class="banner">
+			<li class="inner"><a href="https://www.amazon.com/s?k=apples&ref=nb_sb_noss_1" target="_blank"><img src="apples.png"></a></li>
+			<li class="inner"><a href="https://www.amazon.com/s?k=watch+out&ref=nb_sb_noss_2" target="_blank"><img src="watch.png"></a></li>
+			<li class="inner"><a href="https://www.amazon.com/s?k=smart+phone&ref=nb_sb_noss_2" target="_blank"><img src="smartp.png"></a></li>
+			<li class="inner"><a href="https://www.amazon.com/s?k=drink&ref=nb_sb_noss_1" target="_blank"><img src="drink.png"></a></li>
+			<li class="inner"><a href="https://www.amazon.com/s?k=pizza&ref=nb_sb_noss_2" target="_blank"><img src="pizza.png"></a></li>
+			<li class="inner"><a href="https://www.amazon.com/s?k=card&ref=nb_sb_noss_1" target="_blank"><img src="card.png"></a></li>
+			<li class="inner"><a href="https://www.amazon.com/s?k=apples&ref=nb_sb_noss_1" target="_blank"><img src="apples.png"></a></li>
+		</ul>
+	</div>
+	<div class="btns">
+		<ul>
+			<li class="activ"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+ <!--슬라이더 끝 -->
+ <!-- 추천제품 시작 -->
+ 	<section class="recoProduct">
+		<div class="recoText">추천 제품</div>
+		<div class="recoContain">
+			<div class="recoBox">
+				<div class="boxImg"><img src="ball.png"></div>
+				<div class="boxInfo">
+					<div class="proName "><strong>구멍난 공 및 스포츠용품</strong></div>
+					<div>
+						<dl class="price">
+							<dt class="">1,000,000</dt>
+							<dd>원 부터</dd>
+						</dl>
+						<dl class="orgPrice">
+							<dt>9999</dt>
+							<dd>원</dd>
+						</dl>
+						<div class="delivery">
+							<span>무료배송</span>
+							<span>9999개 구매</span>
+						</div>
+					</div>
+				</div>
+				<div class="boxfoot ">
+					<i class="fab fa-cc-amazon-pay"></i>
+					<i class="fab fa-cc-visa"></i>
+					<i class="fab fa-cc-mastercard"></i>
+					<i class="fab fa-cc-apple-pay"></i>
+				</div>
+			</div>
+			<div class="recoBox">
+				<div class="boxImg"><img src="adidas.png"></div>
+				<div class="boxInfo">
+					<div class="proName"><strong>아다다스 기획전</strong></div>
+					<div>
+						<dl class="price">
+							<dt>1,565,486</dt>
+							<dd>원 부터</dd>
+						</dl>
+						<dl class="orgPrice">
+							<dt>9999</dt>
+							<dd>원</dd>
+						</dl>
+						<div class="delivery">
+							<span>무료배송</span>
+							<span>9999개 구매</span>
+						</div>
+					</div>
+				</div>
+				<div class="boxfoot">
+					<i class="fab fa-cc-amazon-pay"></i>
+					<i class="fab fa-cc-visa"></i>
+					<i class="fab fa-cc-mastercard"></i>
+					<i class="fab fa-cc-apple-pay"></i>
+				</div>
+			</div>
+			<div class="recoBox">
+				<div class="boxImg"><img src="nike.png"></div>
+				<div class="boxInfo">
+					<div class="proName"><strong>짝퉁나이키 특별전</strong></div>
+					<div>
+						<dl class="price">
+							<dt>1,000,000,000,000</dt>
+							<dd>원 부터</dd>
+						</dl>
+						<dl class="orgPrice">
+							<dt>9999</dt>
+							<dd>원</dd>
+						</dl>
+						<div class="delivery">
+							<span>무료배송</span>
+							<span>9999개 구매</span>
+						</div>
+					</div>
+				</div>
+				<div class="boxfoot">
+					<i class="fab fa-cc-amazon-pay"></i>
+					<i class="fab fa-cc-visa"></i>
+					<i class="fab fa-cc-mastercard"></i>
+					<i class="fab fa-cc-apple-pay"></i>
+				</div>
+			</div>
+			<div class="recoBox">
+				<div class="boxImg"><img src="thing.png"></div>
+				<div class="boxInfo">
+					<div class="proName"><strong>어디에 쓸는지 모르는 물건들</strong></div>
+					<div>
+						<dl class="price">
+							<dt>1,000</dt>
+							<dd>원 부터</dd>
+						</dl>
+						<dl class="orgPrice">
+							<dt>9999</dt>
+							<dd>원</dd>
+						</dl>
+						<div class="delivery">
+							<span>무료배송</span>
+							<span>9999개 구매</span>
+						</div>
+					</div>
+				</div>
+				<div class="boxfoot">
+					<i class="fab fa-cc-amazon-pay"></i>
+					<i class="fab fa-cc-visa"></i>
+					<i class="fab fa-cc-mastercard"></i>
+					<i class="fab fa-cc-apple-pay"></i>
+				</div>
+			</div>
+			<div class="recoBox">
+				<div class="boxImg"><img src="tra.png"></div>
+				<div class="boxInfo">
+					<div class="proName"><strong>나무막대기 및 테라피용품 세일</strong></div>
+					<div>
+						<dl class="price">
+							<dt>2,656,156</dt>
+							<dd>원 부터</dd>
+						</dl>
+						<dl class="orgPrice">
+							<dt>9999</dt>
+							<dd>원</dd>
+						</dl>
+						<div class="delivery">
+							<span>무료배송</span>
+							<span>9999개 구매</span>
+						</div>
+					</div>
+				</div>
+				<div class="boxfoot">
+					<i class="fab fa-cc-amazon-pay"></i>
+					<i class="fab fa-cc-visa"></i>
+					<i class="fab fa-cc-mastercard"></i>
+					<i class="fab fa-cc-apple-pay"></i>
+				</div>
+			</div>
+			<div class="recoBox">
+				<div class="boxImg"><img src="alcol.png"></div>
+				<div class="boxInfo">
+					<div class="proName"><strong>많이 비싸보이는 술 기획전</strong></div>
+					<div>
+						<dl class="price">
+							<dt>999,999,999,999</dt>
+							<dd>원</dd>
+						</dl>
+						<dl class="orgPrice">
+							<dt>9999</dt>
+							<dd>원</dd>
+						</dl>
+						<div class="delivery">
+							<span>무료배송</span>
+							<span>9999개 구매</span>
+						</div>
+					</div>
+				</div>
+				<div class="boxfoot">
+					<i class="fab fa-cc-amazon-pay"></i>
+					<i class="fab fa-cc-visa"></i>
+					<i class="fab fa-cc-mastercard"></i>
+					<i class="fab fa-cc-apple-pay"></i>
+				</div>
+			</div>
+			<div class="recoBox">
+				<div class="boxImg"><img src="corona.png"></div>
+				<div class="boxInfo">
+					<div class="proName"><strong>김빠진 코로나 맥주 할인전</strong></div>
+					<div>
+						<dl class="price">
+							<dt>22,000</dt>
+							<dd>원 부터</dd>
+						</dl>
+						<dl class="orgPrice">
+							<dt>9999</dt>
+							<dd>원</dd>
+						</dl>
+						<div class="delivery">
+							<span>무료배송</span>
+							<span>9999개 구매</span>
+						</div>
+					</div>
+				</div>
+				<div class="boxfoot">
+					<i class="fab fa-cc-amazon-pay"></i>
+					<i class="fab fa-cc-visa"></i>
+					<i class="fab fa-cc-mastercard"></i>
+					<i class="fab fa-cc-apple-pay"></i>
+				</div>
+			</div>
+			<div id="fakeBox" class="recoBox"></div>
+			<div id="fakeBox" class="recoBox"></div>
+		</div>
+	</section>
+ 
+ <!-- 풋터 시작 -->
+	<footer id="footer">
+	 	<div>
+	 		<span>상호명 : ADMIN</span><span>저자 : KIM-IN-HOO</span><br/>
+	 		<span>고객센터 : 1688-0000</span><span>Fax : 000-000-0000</span><br/>
+	 		<span>tel : 000-000-0000</span><span>e-mail : admin@admin.com</span><span>address : 대전광역시 서구 비젼직업학교</span><br/>
+	 		<span>참조 및 사용사이트: fixlr(픽슬러), unsplash(언스플레쉬), amazon(아마존), youtube(유튜브), google(구글), 11번가</span>
+	 	</div>
+	 </footer>
+ <!-- 풋터끝 -->
+</body>
+</html>

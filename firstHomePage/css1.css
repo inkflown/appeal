@@ -1,0 +1,417 @@
+@charset "UTF-8";
+@import "reset.css";
+
+
+body{
+	font-family: 'Outfit', sans-serif;
+}
+
+a{
+	text-decoration:none;
+	color:white;
+}
+
+#footer{
+	text-align:center;
+	background:#232F3E;
+	color:#CACACA;
+	padding:30px 0px 80px 0px;
+	font-size:10px;
+}
+
+#footer div span{
+	margin:4px 4px 4px 4px; 
+}
+												/*네비 관련*/
+nav {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	background-color:#232F3E;
+	padding: 12px 18px;
+}
+
+.navi__logo{
+	display:flex;
+	color:#FF9900;
+	align-items:center;
+	font-size:26px;
+	height:42px;
+}
+
+.navi__menu{
+	display:flex;
+}
+.navi__menu li{
+	padding:13px 5px;	
+}
+.navi__menu li:hover{
+	background-color:#333E4C;
+	border-radius:6px;
+}
+
+.navi__menu li>a{
+	padding:13px 17px;
+}
+.navi__menu li>a:hover{
+	color:#FF9900;
+}
+.login{
+	color:#FD4546;
+}
+.current{
+	color:#FF9900;
+}
+
+
+.navi__sns{
+	display:flex;
+	color:white;
+}
+.navi__sns li{
+	padding:13px 10px;
+}
+.navi__sns a:hover{
+	color:#FF9900;
+}
+.navi__toggle{
+	display:none;
+	position:absolute;
+	right:22px;
+	top:23px;
+	font-size:21px;
+}
+.navi__toggle:hover{
+	color:#FF9900;
+}
+
+												/*슬라이더 관련*/
+.container{
+	overflow:hidden;
+}
+
+.banner{
+	width:700vw;
+	transition: transform 0.5s;
+	position: relative
+}
+
+.inner{
+	width:100vw;
+	float:left;
+}
+.inner img{
+	width:100%;
+	object-fit:cover;
+}
+
+.bnt{
+	width: 100%;
+	align-items:center;
+	
+}
+.btns ul{
+	display:flex;
+	justify-content:center;
+}
+.btns ul li{
+	margin:0px 30px 40px 30px;
+	padding:7px;
+	background:#ccc;
+	border-radius:100%;
+	cursor:Pointer;
+}
+
+.btns ul li.activ{
+	background:#FF9900;
+	border-radius:100%;
+}
+
+												/*추천상품 관련*/
+.recoProduct{
+	background:#F6F7FB;
+	height:auto;
+	padding:50px 0px 0px;
+	overflow:hidden;
+}
+
+.recoText{
+	font-size:35px;
+	font-weight:600;
+	margin: 0px 0px 20px;
+	text-align:center;
+}
+
+.recoContain{
+	display:flex;
+	flex-flow :row wrap;
+	justify-content:space-around;
+	background: #e7e7e7;
+	padding:40px 0px 0px;
+}
+
+.recoBox{
+	display:inline-block;
+	cursor:pointer;
+	position: relative;
+	background:white;
+	width:394px;
+	height:367px;
+	margin:0px 40px 100px;
+	color:#5F6368;
+	font-family: 'Noto Sans KR', sans-serif;
+	border:1px solid #E8E9ED;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.boxImg{
+	width:394px;
+	height:220px;
+	overflow: hidden;
+}
+
+.zoom{
+	transform:scale(1.1);
+	transition:transform 0.5s;
+}
+.zoomout{
+	transform:scale(1);
+	transition:transform 0.5s; 
+}
+.hilit{
+	color:#000000;
+	font-weight:bold;
+	transition:transform 0.5s;
+}
+.hilitout{
+	color:#5F6368;
+	transition:transform 0.5s;
+}
+.boxShadow{
+	box-shadow: 0px 0px 50px 1px #b3b3b3;
+}
+.boxShadowout{
+	box-shadow: none;
+}
+
+
+.boxInfo{
+	background:white;
+	padding:15px 20px 0px;
+}
+.proName{
+	background:white;
+	margin:0px 0px 10px;
+	font-size:16px;
+}
+
+.price{
+	background:white;
+	display:inline-block;
+}
+.price>dt{
+	font-size:24px;
+}
+.orgPrice{
+	background:white;
+	display:inline-block;
+}
+.orgPrice>dd{
+	font-size:13px;
+}
+.orgPrice>dd,.orgPrice> dt{
+	font-size:13px;
+	 text-decoration:line-through;
+}
+
+dt, dd	{
+	display:inline-block;
+}
+
+.delivery{
+	background:white;
+	display:flex;
+	justify-content:space-between;
+	margin:8px 0px 0px;
+	font-size:13px;
+
+}
+.boxfoot{
+	background:white;
+	font-size:25px;
+	display:flex;
+	justify-content:space-between;
+	margin:0px 21px;
+	padding:13px 30px;
+}
+.boxfoot>i{
+	padding:0px 30px 0px 0px;
+}
+
+#fakeBox{
+	opacity:0;
+	height:1px;
+}
+
+												/*로그인 관련*/
+.login_Section{
+	background: #E1E1E1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 700px;
+}
+.login_Box{
+	display: flex;
+	width: 900px;
+	height: 400px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.login_Expl{
+	background: #1A2330;
+	background-image: url(amazon.png);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 450px;
+	color: white;
+}
+.login_Expl>h3{
+	font-size: 25px;
+	margin-bottom:40px;
+}
+.login_Expl>*{
+	padding:0px 60px 0px;
+}
+.joinButton{
+	width: 160px;
+	height: 30px;
+	border:none;
+	border-radius: 15px;
+	background: #FF9900;
+	color:white;
+	font-size: 15px;
+}
+.joinButton:hover{
+	color:#1A2330;
+}
+
+.logBody{
+	margin-bottom: 40px;
+}
+
+.login_Input{
+	background: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 450px;
+}
+.login_Input>h3{
+	font-size: 30px;
+	margin-bottom: 40px;
+	color:#232F3E;
+}
+.inputBox{
+	width:160px;
+	height:25px;
+	margin-bottom: 30px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid rgb(182, 182, 182);
+}
+.inputBox::placeholder{
+	color:rgb(182, 182, 182);
+}
+.loginButton{
+	width: 160px;
+	height: 30px;
+	border:none;
+	border-radius: 15px;
+	background: #232F3E;
+	color:white;
+	font-size: 15px;
+}
+.loginButton:hover{
+	color:#FF9900;
+	box-shadow: 0px 0px 30px 1px #b3b3b3;
+}
+												/* 회원가입 영역 */
+.joinSection{
+	background: #E1E1E1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 1000px;
+}
+.joinBox{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color:#232F3E;
+	background: white;
+	width: 450px;
+	height: 900px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.fa-amazon{
+	color:#FF9900;
+}
+.joinBox>h3{
+	font-size: 30px;
+	margin-bottom: 45px;
+}
+.joinInput>div>div:nth-child(1){
+	margin-bottom: 5px;
+}
+.inJoin{
+	margin-top: 20px;
+}
+.radio{
+	margin-bottom:30px;
+}
+												/* 모바일영역 */
+@media screen and (max-width:720px){
+	.navi{
+		flex-direction:column;
+		align-items:flex-start;
+	}
+	
+	.navi__menu{
+		display:none;
+		flex-direction:column;
+		align-items:center;
+		width:100%;
+	}
+
+	.navi__menu li{
+		width:100%;
+		text-align:center;
+	}
+
+	.navi__sns{
+		display:none;
+		text-align:center;
+		justify-content:center;
+		width:100%;
+	}
+	.navi__toggle{
+		display:block;
+	}
+	
+	#footer{
+		padding:15px 0px 30px 0px;
+		font-size:10px;
+	}
+	.logBody{
+		display:none;
+	}
+}

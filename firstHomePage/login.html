@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인-화면구현 과제</title>
+<link type="text/css" rel="stylesheet" href="css1.css"></link>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/c895b3190c.js" crossorigin="anonymous"></script>	
+<script src="main.js" defer></script>
+</head>
+<body>
+<!-- 네비 메뉴 시작 -->
+	<nav class="navi">
+		<div class="navi__logo">
+			<i class="fab fa-amazon"></i>
+			<a href="index.html">Amazon</a>
+		</div>
+		<ul class="navi__menu act">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="">New</a></li>
+			<li><a href="">Best</a></li>
+			<li><a href="">Sale</a></li>
+			<li><a class="login current" href="login.html">Login</a></li>		
+		</ul>
+		<ul class="navi__sns act">
+			<li><a href="https://www.instagram.com/?hl=ko"><i class="fab fa-instagram"></i></a></li>
+			<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+		</ul>
+		<a href="#" class="navi__toggle"><i class="fas fa-bars"></i></a>
+	</nav>
+<!-- 네비메뉴 끝 -->
+<!-- 로그인영역 시작-->
+<section class="login_Section">
+    <div class="login_Box">
+        <div class="login_Expl">
+            <h3><strong><i class="fab fa-amazon"></i>Amazon에 오신걸 환영합니다.</strong></h3>
+            <div class="logBody">
+            세상에 없는 물건 뺴곤 다있는 아마존의 혜텍을 로그인하여 받아보세요 만약에 아마존 계정이 없다면 회원가입을 통하여 손쉽게 아마존 회원이 되어 
+            혜텍을 누려보세요 하지만 이건 정말 아마존 홈페이지는 아니고 저의 과제 사이트 입니다
+            </div>
+            <input class="joinButton" type="button" onClick="location.href='join.html'" value="회원가입">
+        </div>
+        <form class="login_Input" action="index.html" method="post" onsubmit="return loginJuge()">
+            <h3>LOGIN</h3>
+            <input id="lId" class="inputBox" type="text" placeholder="아이디" required>
+            <input id="lPsw" class="inputBox" type="password" placeholder="패스워드" required>
+            <input class="loginButton" type="submit" value="LOGIN">
+        </form>
+    </div>
+</section>
+<!-- 로그인영역 끝-->
+<!-- 풋터 시작 -->
+ <footer id="footer">
+    <div>
+        <span>상호명 : ADMIN</span><span>저자 : KIM-IN-HOO</span><br/>
+        <span>고객센터 : 1688-0000</span><span>Fax : 000-000-0000</span><br/>
+        <span>tel : 000-000-0000</span><span>e-mail : admin@admin.com</span><span>address : 대전광역시 서구 비젼직업학교</span><br/>
+        <span>참조 및 사용사이트: fixlr(픽슬러), unsplash(언스플레쉬), amazon(아마존), youtube(유튜브), google(구글), 11번가</span>
+    </div>
+</footer>
+<!-- 풋터 끝 -->
+</body>
+</html>

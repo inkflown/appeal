@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입-화면구현 과제</title>
+<link type="text/css" rel="stylesheet" href="css1.css"></link>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/c895b3190c.js" crossorigin="anonymous"></script>	
+<script src="main.js" defer></script>
+</head>
+<body>
+<!-- 네비 메뉴 시작 -->
+	<nav class="navi">
+		<div class="navi__logo">
+			<i class="fab fa-amazon"></i>
+			<a href="index.html">Amazon</a>
+		</div>
+		<ul class="navi__menu act">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="">New</a></li>
+			<li><a href="">Best</a></li>
+			<li><a href="">Sale</a></li>
+			<li><a class="login current" href="login.html">Login</a></li>		
+		</ul>
+		<ul class="navi__sns act">
+			<li><a href="https://www.instagram.com/?hl=ko"><i class="fab fa-instagram"></i></a></li>
+			<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+		</ul>
+		<a href="#" class="navi__toggle"><i class="fas fa-bars"></i></a>
+	</nav>
+<!-- 네비메뉴 끝 -->
+<!-- 회원가입 영역 시작 -->
+    <section class="joinSection">
+        <div class="joinBox">
+            <h3><strong><i class="fab fa-amazon"></i>Amazon</strong></h3>
+            <form class="joinInput" action="index.html" method="post" onsubmit="return joinJuge()">
+                <div class="lastName">
+                    <div>성</div>
+                    <input class="inputBox" type="text" placeholder="성" required>
+                </div>
+                <div class="firstNasme">
+                    <div>이름</div>
+                    <input class="inputBox" type="text" placeholder="이름" required>
+                </div>
+                <div class="phoneNum">
+                    <div>전화번호</div>
+                    <input class="inputBox" type="tel" placeholder="'-'를 제외하고 입력해주세요" required>
+                </div>
+                <div class="email">
+                    <div>이메일</div>
+                    <input class="inputBox" type="email" placeholder="xxxxxx@xxxx.xxxx" required>
+                </div>
+                <div class="gender">
+                    <div>성별</div>
+                    <div class="radio">
+                        <input type="radio" name="gender" value="male"><label for="male" checked >남성</label>
+                        <input type="radio" name="gender" value="female"><label for="female">여성</label>
+                    </div>
+                </div>
+                <div class="date">
+                    <div>생년월일</div>
+                    <input class="inputBox" type="date">
+                </div>
+                <div class="id">
+                    <div>아이디</div>
+                    <input id="id" class="inputBox" type="text" placeholder="아이디" required>
+                </div>
+                <div class="psw">
+                    <div>비밀번호</div>
+                    <input id="paw1" class="inputBox" type="password" placeholder="비밀번호" required>
+                </div>
+                <div class="pswCheck">
+                    <div>비밀번호 확인</div>
+                    <input id="paw2" class="inputBox" type="password" placeholder="비밀번호 확인" required>
+                </div>
+                <input class="inJoin loginButton" type="submit" value="회원가입">
+            </form>
+        </div>
+    </section>
+<!-- 회원가입 영역 끝 -->
+<!-- 풋터 시작 -->
+<footer id="footer">
+    <div>
+        <span>상호명 : ADMIN</span><span>저자 : KIM-IN-HOO</span><br/>
+        <span>고객센터 : 1688-0000</span><span>Fax : 000-000-0000</span><br/>
+        <span>tel : 000-000-0000</span><span>e-mail : admin@admin.com</span><span>address : 대전광역시 서구 비젼직업학교</span><br/>
+        <span>참조 및 사용사이트: fixlr(픽슬러), unsplash(언스플레쉬), amazon(아마존), youtube(유튜브), google(구글), 11번가</span>
+    </div>
+</footer>
+<!-- 풋터 끝 -->
+</body>
+</html>
